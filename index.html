@@ -14,7 +14,7 @@
     <header>
         <div class="center">
             <div class="logo">
-               <h2>Dank.Coud</h2>
+               <h2>Livraria.Tailored</h2>
             </div>
             <div class="menu">
                 <a href="#">
@@ -24,15 +24,25 @@
                     Sobre
                 </a>
                 <a href="#">
-                    Contatos
+                    Livros
                 </a>
                 <a  class="btn-menu"href="#">
-                    Get Started
+                    Cadastro
                 </a>
 
             </div>
         </div><!--CENTER-->
     </header>
+   
+    <!--ANIMACÃO DE IMAGENS-->
+    <div id="slider">
+        <img class="selected" src="livro.jpg">
+        <img src="livro2.jpg">
+        <img src="livro3.jpg">
+        <img src="livro4.jpg">
+    </div>
+    
+    <script src="script.js"></script>
 
     <section class="main">
         <div class="center">
@@ -78,19 +88,106 @@
     <section class="sobre">
         <div class="center">
             <div class="chamada-sobre">
-                <h2>Sobre a Danki</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit perspiciatis incidunt voluptas deserunt non? Accusantium voluptatem, obcaecati corrupti facilis .</p>
+                <h2>1. Orgulho e Preconceito - Jane Austen</h2>
+                <div class="imagen1"><img src="../Site/orgulho-e-preconceito.jpg" alt=""></div>
             </div><!--conteudo sobre-->
-            <div class="conteudo-sobre">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ex nam quas tempora. Nihil non voluptatum minus sed adipisci debitis inventore repellat molestiae totam provident cumque repudiandae in, dolores qui!</p>
-
-                <br />
-                <span><i class="fas fa-check-double"></i> Item 1<br/></span>
-                <span><i class="fas fa-check-double"></i> Item 1<br/></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quo possimus natus repellendus ab ducimus vitae eveniet, qui culpa eos similique tempore dolore vel excepturi corporis provident voluptatum eligendi consequuntur!</p>
+            <div class="chamada-sobre">
+                <h2>2. 1984 - George Orwell</h2>
+                <div class="imagen1"><img src="maiores-e-melhores-1984.jpg" alt=""></div>
             </div><!--conteudo sobre-->
         </div><!--center-->
 
+
+        <div class="center">
+            <div class="chamada-sobre">
+                <h2>3. Dom Quixote de la Mancha - Miguel de Cervantes</h2>
+                <div class="imagen1"><img src="maiores-e-melhores-dom-quixote-de-la-mancha.jpg" alt=""></div>
+            </div><!--conteudo sobre-->
+            <div class="chamada-sobre">
+                <h2>4. O Pequeno Príncipe - Antoine de Saint-Exupéry</h2>
+                <div class="imagen1"><img src="maiores-e-melhores-o-pequeno-principe-cke.jpg" alt=""></div>
+            </div><!--conteudo sobre-->
+
+        </div>
+
+
+        <div class="center">
+            <div class="chamada-sobre">
+                <h2>5. Dom Casmurro - Machado de Assis</h2>
+                <div class="imagen1"><img src="maiores-e-melhores-dom-quixote-de-la-mancha.jpg" alt=""></div>
+            </div><!--conteudo sobre-->
+            <div class="chamada-sobre">
+                <h2>6. O Bandolim do Capitão Corelli - Louis de Bernières</h2>
+                <div class="imagen1"><img src="maiores-e-melhores-o-bandolim-de-corelli.jpg" alt=""></div>
+            </div><!--conteudo sobre-->
+
+        </div>
+
+
+        <div class="center">
+            <div class="chamada-sobre">
+                <h2>7. O Conde de Monte Cristo - Alexandre Dumas</h2>
+                <div class="imagen1"><img src="maiores-e-melhores-o-conde-de-monte-cristo-cke.jpg" alt=""></div>
+            </div><!--conteudo sobre-->
+            <div class="chamada-sobre">
+                <h2>8. Um Estudo em Vermelho - Arthur Conan Doyle</h2>
+                <div class="imagen1"><img src="maiores-e-melhores-um-estudo-em-vermelho-cke.jpg" alt=""></div>
+            </div><!--conteudo sobre-->
+
+        </div>
+
     </section><!--sobre-->
+
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Fórmulário de Clientes</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div>
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">Outro</label>
+                <br><br>
+                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <br><br><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="labelInput">Estado</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="endereco" class="labelInput">Endereço</label>
+                </div>
+                <br><br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
